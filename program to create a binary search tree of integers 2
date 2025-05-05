@@ -7,7 +7,12 @@ struct node {
 	temp->left = temp->right = NULL;
 	return temp;
 }
-  
+BSTNODE newNodeInBST(int item) {
+	BSTNODE temp =  (BSTNODE)malloc(sizeof(struct node));
+	temp->data = item;
+	temp->left = temp->right = NULL;
+	return temp;
+}
 void inorderInBST(BSTNODE root) {
 	//write your code here..
  if (root != NULL) {
